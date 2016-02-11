@@ -1,0 +1,116 @@
+<warehouseorders>
+	<warehouseorder>
+		<reporttype>940</reporttype>
+		<transactiontype>Sale</transactiontype>
+		<ponum>110061</ponum>
+		<podate>2015-04-22</podate>
+		<depositorordernum>value</depositorordernum>
+		<paymentmethod>value</paymentmethod>
+		<shipdate>2015-09-15</shipdate>
+		<canceldate>2015-09-25</canceldate>
+		<scac>value</scac>
+		<routing>value</routing>
+		<transportationmethod>Sea</transportationmethod>
+		<quantityordered>value</quantityordered>
+		<shiptoname>Ross Stores Inc.</shiptoname>
+		<shiptoaddress1>PO Box 29161</shiptoaddress1>
+		<shiptoaddress2>value</shiptoaddress2>
+		<shiptocity>Hot Springs</shiptocity>
+		<shiptostate></shiptostate>
+		<shiptozip>71903</shiptozip>
+		<shiptocountry></shiptocountry>
+		<shipfromname>value</shipfromname>
+		<shipfromaddress1>value</shipfromaddress1>
+		<shipfromaddress2>value</shipfromaddress2>
+		<shipfromcity>value</shipfromcity>
+		<shipfromstate>value</shipfromstate>
+		<shipfromzip>value</shipfromzip>
+		<shipfromcode>12345</shipfromcode>
+		<plantname>value</plantname>
+		<plantaddress1>value</plantaddress1>
+		<plantaddress2>value</plantaddress2>
+		<plantcity>value</plantcity>
+		<plantstate>value</plantstate>
+		<plantzip>value</plantzip>
+		<plantcode>value</plantcode>
+		<storenum>value</storenum>
+		<customerordernum>value</customerordernum>
+		<vendornum>value</vendornum>
+		<merchandisetype>value</merchandisetype>
+		<departmentnum>value</departmentnum>
+		<shipid>value</shipid>
+		<referencestorenum>value</referencestorenum>
+		<accountnum>value</accountnum>
+		<clientnum>COMPUT</clientnum>
+		<dcnum>value</dcnum>
+		<receivername>value</receivername>
+		<receiverphonenum>value</receiverphonenum>
+		<items>
+			<item>
+				<linenum>0</linenum>
+				<upccasecode>value</upccasecode>
+				<vendoritemnum>2C881147101J</vendoritemnum>
+				<buyersitemnum>2C881147101J</buyersitemnum>
+				<selfplanningnum>value</selfplanningnum>
+				<description>Plush Robe w/3D Critter: Sheep</description>
+				<qty>2580</qty>
+				<uom>value</uom>
+				<retailprice>8.4</retailprice>
+				<sizeofinnerpacks>value</sizeofinnerpacks>
+				<color>Cool Gray</color>
+				<gender>Ladies</gender>
+				<producttype>Short Robe</producttype>
+				<brand>Hot Kiss</brand>
+				<prepack>6</prepack>
+				<sizebreak>S-M-L</sizebreak>
+				<sizescale>1-3-2</sizescale>
+				<mc>36</mc>
+				<cc>value</cc>
+			</item>
+	
+			<item>
+				<linenum>1</linenum>
+				<upccasecode>value</upccasecode>
+				<vendoritemnum>2C881147301J</vendoritemnum>
+				<buyersitemnum>2C881147301J</buyersitemnum>
+				<selfplanningnum>value</selfplanningnum>
+				<description>Plush Robe w/3D Critter</description>
+				<qty>25800</qty>
+				<uom>value</uom>
+				<retailprice>8.4</retailprice>
+				<sizeofinnerpacks>value</sizeofinnerpacks>
+				<color>Tan</color>
+				<gender>Ladies</gender>
+				<producttype>Short Robe</producttype>
+				<brand>Hot Kiss</brand>
+				<prepack>6</prepack>
+				<sizebreak>S-M-L</sizebreak>
+				<sizescale>1-3-2</sizescale>
+				<mc>36</mc>
+				<cc>value</cc>
+			</item>
+	
+			<item>
+				<linenum>2</linenum>
+				<upccasecode>value</upccasecode>
+				<vendoritemnum>2C881147401J</vendoritemnum>
+				<buyersitemnum>2C881147401J</buyersitemnum>
+				<selfplanningnum>value</selfplanningnum>
+				<description>Plush Robe w/3D Critter: Cat</description>
+				<qty>2580</qty>
+				<uom>value</uom>
+				<retailprice>8.4</retailprice>
+				<sizeofinnerpacks>value</sizeofinnerpacks>
+				<color>Soft Neon Pink</color>
+				<gender>Ladies</gender>
+				<producttype>Short Robe</producttype>
+				<brand>Hot Kiss</brand>
+				<prepack>6</prepack>
+				<sizebreak>S-M-L</sizebreak>
+				<sizescale>1-3-2</sizescale>
+				<mc>36</mc>
+				<cc>value</cc>
+			</item>
+		</items>
+	</warehouseorder>
+</warehouseorders>

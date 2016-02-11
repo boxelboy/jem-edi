@@ -1,0 +1,64 @@
+Let([
+
+// Start Synergize
+tmp = Synergize_StartListening(32767);
+
+// setup entities
+tmp = Synergize_Api_AddEntity("purchase_orders"; "Purchase_Order"; "PO_No");
+tmp = Synergize_Api_AddEntity("purchase_order_line_items"; "Purchase_Order_Line_Items"; "Key_Primary");
+tmp = Synergize_Api_AddEntity("sales_order"; "Sales_Order"; "Order_Number");
+tmp = Synergize_Api_AddEntity("sales_order_line_items"; "Sale_Order_LineItems"; "Stk_Code");
+tmp = Synergize_Api_AddEntity("clients"; "Clients"; "Key_Primary");
+tmp = Synergize_Api_AddEntity("stock"; "Stock"; "Record_ID");
+
+// add columns to entities
+tmp = Synergize_Api_AddProperty( "purchase_orders"; "podate"; "Creation_Date");
+tmp = Synergize_Api_AddProperty( "purchase_orders"; "transportmethod"; "Shipping_Method");
+tmp = Synergize_Api_AddProperty( "purchase_orders"; "shipfromcode"; "Warehouse_Code");
+tmp = Synergize_Api_AddProperty( "purchase_orders"; "clientnum"; "Customer_ID");
+tmp = Synergize_Api_AddProperty( "purchase_orders"; "ordernumber"; "Order_Number");
+tmp = Synergize_Api_AddProperty( "purchase_orders"; "po_no"; "PO_No");
+tmp = Synergize_Api_AddProperty( "purchase_orders"; "quantityordered"; "Line_Item_Total");
+
+tmp = Synergize_Api_AddProperty( "purchase_order_line_items"; "po_no"; "PO_Number");
+tmp = Synergize_Api_AddProperty( "purchase_order_line_items"; "vendoritemnum"; "Stk_Master_Style");
+tmp = Synergize_Api_AddProperty( "purchase_order_line_items"; "description"; "Description");
+tmp = Synergize_Api_AddProperty( "purchase_order_line_items"; "qty"; "Qty");
+tmp = Synergize_Api_AddProperty( "purchase_order_line_items"; "color"; "Stk_Colour");
+tmp = Synergize_Api_AddProperty( "purchase_order_line_items"; "prepack"; "Prepack");
+tmp = Synergize_Api_AddProperty( "purchase_order_line_items"; "sizebreak"; "SizeBreak");
+tmp = Synergize_Api_AddProperty( "purchase_order_line_items"; "sizescale"; "SizeScale");
+tmp = Synergize_Api_AddProperty( "purchase_order_line_items"; "mc"; "MC");
+tmp = Synergize_Api_AddProperty( "purchase_order_line_items"; "stockID"; "Stock_ID");
+
+tmp = Synergize_Api_AddProperty( "sales_order"; "shipdate"; "Ship_Date");
+tmp = Synergize_Api_AddProperty( "sales_order"; "canceldate"; "Cancel Date");
+tmp = Synergize_Api_AddProperty( "sales_order"; "clientnum"; "Customer_Account_No");
+
+tmp = Synergize_Api_AddProperty( "sales_order_line_items"; "retailprice"; "Sale_Price");
+tmp = Synergize_Api_AddProperty( "sales_order_line_items"; "ordernumber"; "Order_Number");
+
+tmp = Synergize_Api_AddProperty( "clients"; "accountNo"; "Account_No");
+tmp = Synergize_Api_AddProperty( "clients"; "shiptoname"; "Company_Name");
+tmp = Synergize_Api_AddProperty( "clients"; "shiptoaddress1"; "Address_Main_Street");
+tmp = Synergize_Api_AddProperty( "clients"; "shiptocity"; "Address_Main_Post_Town");
+tmp = Synergize_Api_AddProperty( "clients"; "shiptostate"; "Address_Main_County");
+tmp = Synergize_Api_AddProperty( "clients"; "shiptozip"; "Address_Main_Post_Code");
+tmp = Synergize_Api_AddProperty( "clients"; "shiptocountry"; "Address_Main_Country");
+
+tmp = Synergize_Api_AddProperty( "stock"; "recordID"; "Record_ID");
+tmp = Synergize_Api_AddProperty( "stock"; "gender"; "Product_Gender");
+tmp = Synergize_Api_AddProperty( "stock"; "brand"; "Product_Brand");
+tmp = Synergize_Api_AddProperty( "stock"; "producttype"; "Product_Type");
+
+// add relationships
+tmp = Synergize_Api_AddRelationship("purchase_order_line_items"; "purchase_order"; "purchase_orders"; "PO_Number"; "purchase_order_line_items");
+tmp = Synergize_Api_AddRelationship("purchase_orders"; "client"; "clients"; "Customer_ID"; "purchase_order");
+tmp = Synergize_Api_AddRelationship("purchase_orders"; "sales_order"; "sales_order"; "Order_Number"; "purchase_order");
+tmp = Synergize_Api_AddRelationship("purchase_order_line_items"; "sales_order_line_item"; "sales_order_line_items"; "Stock_Code"; "purchase_order_line_item");
+tmp = Synergize_Api_AddRelationship("purchase_order_line_items"; "stock"; "stock"; "stock_ID"; "purchase_order_line_item");
+
+//tmp = Synergize_Api_AddRelationship( entity ; relationship ; foreignEntity ; foreignIdField {; inverseRelationship } )
+tmp = Synergize_Api_AddRelationship("sales_order"; "client"; "clients"; "accountNo"; "sales_order")
+
+];"OK")

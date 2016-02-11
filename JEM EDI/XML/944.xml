@@ -1,0 +1,118 @@
+<WarehouseTransferReceipts>
+	<WarehouseTransferReceipt>
+		<Type>value</Type>
+		<DeliveryDate>value</DeliveryDate>
+		<WarehouseReceiptNum>value</WarehouseReceiptNum>
+		<DepositorOrderNum>value</DepositorOrderNum>
+		<TransportTypeCode>value</TransportTypeCode>
+		<SCAC>value</SCAC>
+		<Routing>value</Routing>
+		<EquipmentNum>value</EquipmentNum>
+		<SealNum1>value</SealNum1>
+		<SealNum2>value</SealNum2>
+		<SealStatusCode>value</SealStatusCode>
+		<PONum>value</PONum>
+		<QuantityofPalletsReceived>value</QuantityofPalletsReceived>
+		<QuantityofPalletsReturned>value</QuantityofPalletsReturned>
+		<QtyReceived>value</QtyReceived>
+		<WarehouseName>value</WarehouseName>
+		<WarehouseAddress>value</WarehouseAddress>
+		<WarehouseAddress2>value</WarehouseAddress2>
+		<WarehouseCity>value</WarehouseCity>
+		<WarehouseState>value</WarehouseState>
+		<WarehouseZip>value</WarehouseZip>
+		<WarehouseCode>value</WarehouseCode>
+		<DepositorName>value</DepositorName>
+		<DepositorAddress>value</DepositorAddress>
+		<DepositorAddress2>value</DepositorAddress2>
+		<DepositorCity>value</DepositorCity>
+		<DepositorState>value</DepositorState>
+		<DepositorZip>value</DepositorZip>
+		<DepositorDUNs>value</DepositorDUNs>
+		<ShipFromName>value</ShipFromName>
+		<ShipFromAddress>value</ShipFromAddress>
+		<ShipFromAddress2>value</ShipFromAddress2>
+		<ShipFromCity>value</ShipFromCity>
+		<ShipFromState>value</ShipFromState>
+		<ShipFromZip>value</ShipFromZip>
+		<ShipFromCode>value</ShipFromCode>
+		<ShipToName>value</ShipToName>
+		<ShipToAddress>value</ShipToAddress>
+		<ShipToAddress2>value</ShipToAddress2>
+		<ShipToCity>value</ShipToCity>
+		<ShipToState>value</ShipToState>
+		<ShipToZip>value</ShipToZip>
+		<ShipToCode>value</ShipToCode>
+		<ShipperName>value</ShipperName>
+		<ShipperAddress>value</ShipperAddress>
+		<ShipperAddress2>value</ShipperAddress2>
+		<ShipperCity>value</ShipperCity>
+		<ShipperState>value</ShipperState>
+		<ShipperZip>value</ShipperZip>
+		<ShipperCode>value</ShipperCode>
+		<BillofladingNote>value</BillofladingNote>
+		<DeliveryNotes>value</DeliveryNotes>
+		<WarehouseInstructions>value</WarehouseInstructions>
+		<Items>
+			<Item>
+				<UPCCode>value</UPCCode>
+				<VendorsItemNum>value</VendorsItemNum>
+				<LotNum>value</LotNum>
+				<LotExpirationDate>value</LotExpirationDate>
+				<UPCNum>value</UPCNum>
+				<Description>value</Description>
+				<QtyReceived>value</QtyReceived>
+				<UOM>value</UOM>
+				<LineItemIDNum>value</LineItemIDNum>
+				<POLineNum>value</POLineNum>
+				<QtyDamaged>value</QtyDamaged>
+				<ReceivedCondition>value</ReceivedCondition>
+				<WarehouseLotNum>value</WarehouseLotNum>
+				<Weight>value</Weight>
+			</Item>
+			<Item>
+				<UPCCode>value</UPCCode>
+				<VendorsItemNum>value</VendorsItemNum>
+				<LotNum>value</LotNum>
+				<LotExpirationDate>value</LotExpirationDate>
+				<UPCNum>value</UPCNum>
+				<Description>value</Description>
+				<QtyReceived>value</QtyReceived>
+				<UOM>value</UOM>
+				<LineItemIDNum>value</LineItemIDNum>
+				<POLineNum>value</POLineNum>
+				<QtyDamaged>value</QtyDamaged>
+				<ReceivedCondition>value</ReceivedCondition>
+				<WarehouseLotNum>value</WarehouseLotNum>
+				<Weight>value</Weight>
+			</Item>
+			<Item>
+				<UPCCode>value</UPCCode>
+				<VendorsItemNum>value</VendorsItemNum>
+				<LotNum>value</LotNum>
+				<LotExpirationDate>value</LotExpirationDate>
+				<UPCNum>value</UPCNum>
+				<Description>value</Description>
+				<QtyReceived>value</QtyReceived>
+				<UOM>value</UOM>
+				<LineItemIDNum>value</LineItemIDNum>
+				<POLineNum>value</POLineNum>
+				<QtyDamaged>value</QtyDamaged>
+				<ReceivedCondition>value</ReceivedCondition>
+				<WarehouseLotNum>value</WarehouseLotNum>
+				<Weight>value</Weight>
+			</Item>
+		</Items>
+	</WarehouseTransferReceipt>
+</WarehouseTransferReceipts>
+
+
+
+
+
+
+
+
+
+
+

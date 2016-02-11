@@ -1,0 +1,77 @@
+<StockTransferShipments>
+	<StockTransferShipment>
+		<ReportType>value</ReportType>
+		<Type>value</Type>
+		<DepositorOrderNum>value</DepositorOrderNum>
+		<ShipmentID>value</ShipmentID>
+		<PONum>value</PONum>
+		<TransactionDate>value</TransactionDate>
+		<RequestedDelivery>value</RequestedDelivery>
+		<TransportationMethod>value</TransportationMethod>
+		<SCAC>value</SCAC>
+		<Routing>value</Routing>
+		<NumofUnitsShipped>value</NumofUnitsShipped>
+		<Weight>value</Weight>
+		<ShipToName>value</ShipToName>
+		<ShipToAddress1>value</ShipToAddress1>
+		<ShipToAddress2>value</ShipToAddress2>
+		<ShipToCity>value</ShipToCity>
+		<ShipToState>value</ShipToState>
+		<ShipToZip>value</ShipToZip>
+		<ShipToCountry>value</ShipToCountry>
+		<ShipToCode>value</ShipToCode>
+		<ShipFromName>value</ShipFromName>
+		<ShipFromAddress1>value</ShipFromAddress1>
+		<ShipFromAddress2>value</ShipFromAddress2>
+		<ShipFromCity>value</ShipFromCity>
+		<ShipFromState>value</ShipFromState>
+		<ShipFromZip>value</ShipFromZip>
+		<ShipFromCountry>value</ShipFromCountry>
+		<ShipFromCode>value</ShipFromCode>
+		<WarehouseName>value</WarehouseName>
+		<WarehouseAddress1>value</WarehouseAddress1>
+		<WarehouseAddress2>value</WarehouseAddress2>
+		<WarehouseCity>value</WarehouseCity>
+		<WarehouseState>value</WarehouseState>
+		<WarehouseZip>value</WarehouseZip>
+		<WarehouseCountry>value</WarehouseCountry>
+		<WarehouseCode>value</WarehouseCode>
+		<Items>
+			<Item>
+				<UPCCode>value</UPCCode>
+				<VendorItemNum>value</VendorItemNum>
+				<OldItemNum>value</OldItemNum>
+				<Description>value</Description>
+				<QtyShipped>value</QtyShipped>
+				<UOM>value</UOM>
+				<SellerLineNum>value</SellerLineNum>
+				<POLineNum>value</POLineNum>
+			</Item>
+			<Item>
+				<UPCCode>value</UPCCode>
+				<VendorItemNum>value</VendorItemNum>
+				<OldItemNum>value</OldItemNum>
+				<Description>value</Description>
+				<QtyShipped>value</QtyShipped>
+				<UOM>value</UOM>
+				<SellerLineNum>value</SellerLineNum>
+				<POLineNum>value</POLineNum>
+			</Item>
+			<Item>
+				<UPCCode>value</UPCCode>
+				<VendorItemNum>value</VendorItemNum>
+				<OldItemNum>value</OldItemNum>
+				<Description>value</Description>
+				<QtyShipped>value</QtyShipped>
+				<UOM>value</UOM>
+				<SellerLineNum>value</SellerLineNum>
+				<POLineNum>value</POLineNum>
+			</Item>
+		</Items>
+	</StockTransferShipment>
+</StockTransferShipments>
+
+
+
+
+
