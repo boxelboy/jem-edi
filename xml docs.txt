@@ -1,0 +1,9 @@
+Inbound documents (exported from TM to Businessman)
+1.       850 – Purchase Order
+2.       945 –warehouse shipping advice (response to 940)
+3.       944 – warehouse stock transfer shipment advice (response to 943)
+Outbound documents (imported into TM from Businessman)
+1.       856 – Advanced Ship Notice
+2.       810 – Invoice
+3.       940 – Warehouse Shipping Order
+4.       943 – Warehouse stock transfer

@@ -1,0 +1,169 @@
+missing data
+------------
+940
+---
+depositorordernum
+paymentmethod
+scac
+routing
+shiptostate
+shiptocountry
+shipfromname
+shipfromaddress
+shipfromcity
+shipfromstate
+shipfromzip
+shipfromcode
+plantname
+plantaddress
+plantcity
+plantstate
+plantzip
+plantcode
+storenum
+customerordernum
+vendornum
+merchandisetype
+departmentnum
+shipid
+referencestorenum
+accountnum
+dcnum
+receivername
+receiverphonenum
+	ITEMS
+	selfplanningnum
+	uom
+	sizeofinnerpacks
+
+943
+---
+type
+depositorordernum
+shipmentid
+transactiondate
+requesteddelivery
+scac
+routing
+numofunitsshipped
+weight
+shiptostate
+shiptocountry
+shiptocode
+shipfromname
+shipfromaddress
+shipfromcity
+shipfromstate
+shipfromzip
+shipfromcode
+warehouseaddress1
+warehousecity
+warehousestate
+warehousezip
+warehousecountry
+warehousecode
+	ITEMS
+	upccode
+	olditemnum
+	uom
+	sellerlinenum
+	polinenum
+
+810
+---
+rowtype
+transactiontype
+accountingid
+departmentnumber
+billoflading
+carrierpro
+scac
+shipvia
+store
+billtocode
+shipdate
+termsdescription
+discountdaysdue
+discountpercent
+weight
+totalcasesshipped
+chargeamount
+allowancepercent
+allowanceamount1
+	ITEMS
+	rowtype
+	vendorpart
+	buyerpart
+	upc
+	quantityshipped
+	uom
+	packsize
+	ofinnerpacks
+	itemallowancepercent
+	itemallowanceamount
+
+856
+---
+rowtype
+transactiontype
+accountingid
+shipmentid
+scac
+carrierpro
+billoflading
+scheduleddelivery
+shiptoaddresscode
+shipvia
+shiptotype
+packagingtype
+grossweight
+grossweightuom
+ofcartonsshipped
+carriertrailer
+trailerinitital
+shipfromname
+shipfromaddress
+shipfromcity
+shipfromstate
+shipfromzip
+shipfromcode
+vendor
+dccode
+productgroup
+status
+timeshipped
+	ORDER
+	rowtype
+	orderweight
+	storename
+	storenumber
+	markforcode
+	department
+	orderladingquantity
+	packagingtype
+		PACK
+		rowtype
+		ucc-128
+		packsize
+		innerpackperouterpack
+		packheight
+		packlength
+		packwidth
+		packweight
+		qtyofupcswithinpack
+		uomofupcs
+		storename
+		storenumber
+			ITEM
+			rowtype
+			line
+			vendorpart
+			buyerpart
+			upc
+			quantityshipped
+			uom
+			orderedquantity
+			unitprice
+			packsize
+			packuom
+			innerpacksperouterpack

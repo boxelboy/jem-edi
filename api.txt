@@ -10,6 +10,11 @@ tmp = Synergize_Api_AddEntity("sales_order"; "Sales_Order"; "Order_Number");
 tmp = Synergize_Api_AddEntity("sales_order_line_items"; "Sale_Order_LineItems"; "Stk_Code");
 tmp = Synergize_Api_AddEntity("clients"; "Clients"; "Key_Primary");
 tmp = Synergize_Api_AddEntity("stock"; "Stock"; "Record_ID");
+tmp = Synergize_Api_AddEntity("stock_quantity"; "Stock_Quantity"; "Stock_Record_ID");
+tmp = Synergize_Api_AddEntity("invoice"; "Invoice"; "Key_Primary");
+tmp = Synergize_Api_AddEntity("invoice_line_items"; "Invoice_Line_Items"; "Key_Secondary");
+// NOTE the actual table is called Invoice_Credit_Line_Items
+
 
 // add columns to entities
 tmp = Synergize_Api_AddProperty( "purchase_orders"; "podate"; "Creation_Date");
@@ -31,12 +36,35 @@ tmp = Synergize_Api_AddProperty( "purchase_order_line_items"; "sizescale"; "Size
 tmp = Synergize_Api_AddProperty( "purchase_order_line_items"; "mc"; "MC");
 tmp = Synergize_Api_AddProperty( "purchase_order_line_items"; "stockID"; "Stock_ID");
 
-tmp = Synergize_Api_AddProperty( "sales_order"; "shipdate"; "Ship_Date");
+tmp = Synergize_Api_AddProperty( "sales_order"; "status"; "Order_Status");
 tmp = Synergize_Api_AddProperty( "sales_order"; "canceldate"; "Cancel Date");
+tmp = Synergize_Api_AddProperty( "sales_order"; "creation_date"; "Creation_Date");
 tmp = Synergize_Api_AddProperty( "sales_order"; "clientnum"; "Customer_Account_No");
+tmp = Synergize_Api_AddProperty( "sales_order"; "cust_order_num"; "Customer_Order_Number");
+tmp = Synergize_Api_AddProperty( "sales_order"; "transportmethod"; "Delivery_Method");
+tmp = Synergize_Api_AddProperty( "sales_order"; "ordernumber"; "Order_Number");
+tmp = Synergize_Api_AddProperty( "sales_order"; "stk_Code"; "Stk_Code");
+tmp = Synergize_Api_AddProperty( "sales_order"; "ship_date"; "Ship_Date");
+tmp = Synergize_Api_AddProperty( "sales_order"; "address_delivery_fao"; "Address_Delivery_FAO");
+tmp = Synergize_Api_AddProperty( "sales_order"; "address_delivery_company"; "Address_Delivery_Company");
+tmp = Synergize_Api_AddProperty( "sales_order"; "address_delivery_street_address"; "Address_Delivery_Street_Address");
+tmp = Synergize_Api_AddProperty( "sales_order"; "address_delivery_post_town"; "Address_Delivery_Post_Town");
+tmp = Synergize_Api_AddProperty( "sales_order"; "address_delivery_state"; "Address_Delivery_State");
+tmp = Synergize_Api_AddProperty( "sales_order"; "address_delivery_postcode"; "Address_Delivery_Post_Code");
+tmp = Synergize_Api_AddProperty( "sales_order"; "address_delivery_country"; "Address_Delivery_Country");
 
 tmp = Synergize_Api_AddProperty( "sales_order_line_items"; "retailprice"; "Sale_Price");
 tmp = Synergize_Api_AddProperty( "sales_order_line_items"; "ordernumber"; "Order_Number");
+tmp = Synergize_Api_AddProperty( "sales_order_line_items"; "po_no"; "PO_Number");
+tmp = Synergize_Api_AddProperty( "sales_order_line_items"; "vendoritemnum"; "Stk_Master_Style");
+tmp = Synergize_Api_AddProperty( "sales_order_line_items"; "description"; "Description");
+tmp = Synergize_Api_AddProperty( "sales_order_line_items"; "qty"; "Qty");
+tmp = Synergize_Api_AddProperty( "sales_order_line_items"; "color"; "Stk_Colour");
+tmp = Synergize_Api_AddProperty( "sales_order_line_items"; "prepack"; "Prepack");
+tmp = Synergize_Api_AddProperty( "sales_order_line_items"; "sizebreak"; "SizeBreak");
+tmp = Synergize_Api_AddProperty( "sales_order_line_items"; "sizescale"; "SizeScale");
+tmp = Synergize_Api_AddProperty( "sales_order_line_items"; "mc"; "MC");
+tmp = Synergize_Api_AddProperty( "sales_order_line_items"; "stockID"; "Stock_ID");
 
 tmp = Synergize_Api_AddProperty( "clients"; "accountNo"; "Account_No");
 tmp = Synergize_Api_AddProperty( "clients"; "shiptoname"; "Company_Name");
@@ -50,15 +78,54 @@ tmp = Synergize_Api_AddProperty( "stock"; "recordID"; "Record_ID");
 tmp = Synergize_Api_AddProperty( "stock"; "gender"; "Product_Gender");
 tmp = Synergize_Api_AddProperty( "stock"; "brand"; "Product_Brand");
 tmp = Synergize_Api_AddProperty( "stock"; "producttype"; "Product_Type");
+tmp = Synergize_Api_AddProperty( "stock"; "description"; "Description");
+tmp = Synergize_Api_AddProperty( "stock"; "prepack"; "Prepack");
+tmp = Synergize_Api_AddProperty( "stock"; "packaging"; "Product_Packaging");
+tmp = Synergize_Api_AddProperty( "stock"; "weight"; "Weight");
+
+tmp = Synergize_Api_AddProperty( "stock_quantity"; "warehouse"; "Warehouse_Name");
+
+tmp = Synergize_Api_AddProperty( "invoice"; "invoice_no"; "Invoice_No");
+tmp = Synergize_Api_AddProperty( "invoice"; "invoice_date"; "Invoice_Date");
+tmp = Synergize_Api_AddProperty( "invoice"; "address_delivery_fao"; "Address_Delivery_FAO");
+tmp = Synergize_Api_AddProperty( "invoice"; "address_delivery_street_address"; "Address_Delivery_Street_Address");
+tmp = Synergize_Api_AddProperty( "invoice"; "address_delivery_post_town"; "Address_Delivery_Post_Town");
+tmp = Synergize_Api_AddProperty( "invoice"; "address_delivery_county"; "Address_Delivery_County");
+tmp = Synergize_Api_AddProperty( "invoice"; "address_delivery_post_code"; "Address_Delivery_Post_Code");
+tmp = Synergize_Api_AddProperty( "invoice"; "address_delivery_country"; "Address_Delivery_Country");
+tmp = Synergize_Api_AddProperty( "invoice"; "customer_display_name"; "Customer_Display_Name");
+tmp = Synergize_Api_AddProperty( "invoice"; "ia_street_address"; "IA_Street_Address");
+tmp = Synergize_Api_AddProperty( "invoice"; "ia_post_town"; "IA_Post_Town");
+tmp = Synergize_Api_AddProperty( "invoice"; "ia_county"; "IA_County");
+tmp = Synergize_Api_AddProperty( "invoice"; "ia_post_code"; "IA_Post_Code");
+tmp = Synergize_Api_AddProperty( "invoice"; "ia_country"; "IA_Country");
+tmp = Synergize_Api_AddProperty( "invoice"; "payment_terms"; "Payment_Terms");
+tmp = Synergize_Api_AddProperty( "invoice"; "notes_for_invoice"; "Notes_for_Invoice");
+tmp = Synergize_Api_AddProperty( "invoice"; "tax"; "Tax");
+tmp = Synergize_Api_AddProperty( "invoice"; "ordernumber"; "Order_No");
+
+tmp = Synergize_Api_AddProperty( "invoice_line_items"; "invoice_no"; "Invoice_Credit_No");
+tmp = Synergize_Api_AddProperty( "invoice_line_items"; "description"; "Description");
+tmp = Synergize_Api_AddProperty( "invoice_line_items"; "qty"; "Qty");
+tmp = Synergize_Api_AddProperty( "invoice_line_items"; "unitprice"; "Sale_Price");
+
 
 // add relationships
 tmp = Synergize_Api_AddRelationship("purchase_order_line_items"; "purchase_order"; "purchase_orders"; "PO_Number"; "purchase_order_line_items");
 tmp = Synergize_Api_AddRelationship("purchase_orders"; "client"; "clients"; "Customer_ID"; "purchase_order");
 tmp = Synergize_Api_AddRelationship("purchase_orders"; "sales_order"; "sales_order"; "Order_Number"; "purchase_order");
 tmp = Synergize_Api_AddRelationship("purchase_order_line_items"; "sales_order_line_item"; "sales_order_line_items"; "Stock_Code"; "purchase_order_line_item");
-tmp = Synergize_Api_AddRelationship("purchase_order_line_items"; "stock"; "stock"; "stock_ID"; "purchase_order_line_item");
+tmp = Synergize_Api_AddRelationship("sales_order_line_items"; "stock"; "stock"; "stock_ID"; "sales_order_line_item");
 
 //tmp = Synergize_Api_AddRelationship( entity ; relationship ; foreignEntity ; foreignIdField {; inverseRelationship } )
-tmp = Synergize_Api_AddRelationship("sales_order"; "client"; "clients"; "accountNo"; "sales_order")
+tmp = Synergize_Api_AddRelationship("sales_order"; "client"; "clients"; "accountNo"; "sales_order");
+tmp = Synergize_Api_AddRelationship("sales_order_line_items"; "sales_order"; "sales_order"; "Order_Number"; "sales_order_line_items");
+tmp = Synergize_Api_AddRelationship("sales_order_line_items"; "stock"; "stock"; "_kf_Stock_ID"; "sales_order_line_items");
+tmp = Synergize_Api_AddRelationship("stock_quantity"; "stock"; "stock"; "Stock_Record_ID"; "stock_quantity");
+
+tmp = Synergize_Api_AddRelationship("invoice"; "sales_order"; "sales_order"; "Order_No"; "invoice");
+tmp = Synergize_Api_AddRelationship("invoice_line_items"; "invoice"; "invoice"; "Key_Secondary"; "invoice_line_items")
+
+
 
 ];"OK")
