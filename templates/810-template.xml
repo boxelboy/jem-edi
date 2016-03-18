@@ -1,0 +1,69 @@
+<invoice>
+	<header>
+		<rowtype>value</rowtype>
+		<transactiontype>value</transactiontype>
+		<accountingid>value</accountingid>
+		<invoice><%= invoice_no %></invoice>
+		<invoicedate><%= invoice_date %></invoicedate>
+		<po>value</po>
+		<podate>value</podate>
+		<departmentnumber>value</departmentnumber>
+		<billoflading>value</billoflading>
+		<carrierpro>value</carrierpro>
+		<scac>value</scac>
+		<shipvia>value</shipvia>
+		<shiptoname><%= address_delivery_fao %></shiptoname>
+		<shiptoaddress-lineone>%= address_delivery_street_address %></shiptoaddress-lineone>
+		<shiptoaddress-linetwo>value</shiptoaddress-linetwo>
+		<shiptocity><%= address_delivery_post_town %></shiptocity>
+		<shiptostate><%= address_delivery_county %></shiptostate>
+		<shiptozipcode><%= address_delivery_post_code %></shiptozipcode>
+		<shiptocountry><%= address_delivery_country %></shiptocountry>
+		<store>value</store>
+		<billtoname><%= customer_display_name %></billtoname>
+		<billtoaddress-lineone><%= ia_street_address %></billtoaddress-lineone>
+		<billtoaddress-linetwo>value</billtoaddress-linetwo>
+		<billtocity><%= ia_post_town %></billtocity>
+		<billtostate><%= ia_county %></billtostate>
+		<billtozipcode><%= ia_post_code %></billtozipcode>
+		<billtocountry><%= ia_country %></billtocountry>
+		<billtocode>value</billtocode>
+		<shipdate>value</shipdate>
+		<termsdescription>value</termsdescription>
+		<netdaysdue><%= payment_terms %></netdaysdue>
+		<discountdaysdue>value</discountdaysdue>
+		<discountpercent>value</discountpercent>
+		<note><%= notes_for_invoice %></note>
+		<weight>value</weight>
+		<totalcasesshipped>value</totalcasesshipped>
+		<taxamount><%= tax %></taxamount>
+		<chargeamount1>value</chargeamount1>
+		<chargeamount2>value</chargeamount2>
+		<allowancepercent1>value</allowancepercent1>
+		<allowanceamount1>value</allowanceamount1>
+		<allowancepercent2>value</allowancepercent2>
+		<allowanceamount2>value</allowanceamount2>
+	<% <!-- start loop --> %>
+	<% var count = 0; %>
+	<% _.each(items, function(item) { %>
+		<item>
+			<rowtype>value</rowtype>
+			<line><%= count %></line>
+			<vendorpart>value</vendorpart>
+			<buyerpart>value</buyerpart>
+			<upc>value</upc>
+			<description><%= item.description %></description>
+			<quantityshipped>value</quantityshipped>
+			<uom>value</uom>
+			<unitprice><%= item.unitprice %></unitprice>
+			<quantityordered><%= item.qty %></quantityordered>
+			<packsize>value</packsize>
+			<ofinnerpacks>value</ofinnerpacks>
+			<itemallowancepercent>value</itemallowancepercent>
+			<itemallowanceamount>value</itemallowanceamount>
+		</item>
+		<% count++; %>
+	<% }); %>
+	<% <!-- end loop --> %>
+	</header>
+</invoice>

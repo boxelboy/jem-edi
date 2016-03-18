@@ -1,0 +1,63 @@
+<stocktransfershipments>
+	<stocktransfershipment>
+		<reporttype>943</reporttype>
+		<type><%= value %></type>
+		<depositorordernum><%= value %></depositorordernum>
+		<shipmentid><%= value %></shipmentid>
+		<ponum><%= ponum %></ponum>
+		<transactiondate><%= value %></transactiondate>
+		<requesteddelivery><%= value %></requesteddelivery>
+		<transportationmethod><%= transportmethod %></transportationmethod>
+		<scac><%= value %></scac>
+		<routing><%= value %></routing>
+		<numofunitsshipped><%= value %></numofunitsshipped>
+		<weight><%= value %></weight>
+		<shiptoname><%= shiptoname %></shiptoname>
+		<shiptoaddress1><%= shiptoaddress1 %></shiptoaddress1>
+		<shiptoaddress2><%= value %></shiptoaddress2>
+		<shiptocity><%= shiptocity %></shiptocity>
+		<shiptostate><%= shiptostate %></shiptostate>
+		<shiptozip><%= shiptozip %></shiptozip>
+		<shiptocountry><%= shiptocountry %></shiptocountry>
+		<shiptocode><%= value %></shiptocode>
+		<shipfromname><%= value %></shipfromname>
+		<shipfromaddress1><%= value %></shipfromaddress1>
+		<shipfromaddress2><%= value %></shipfromaddress2>
+		<shipfromcity><%= value %></shipfromcity>
+		<shipfromstate><%= value %></shipfromstate>
+		<shipfromzip><%= value %></shipfromzip>
+		<shipfromcountry><%= value %></shipfromcountry>
+		<shipfromcode><%= shipfromcode %></shipfromcode>
+		<warehousename><%= warehousename %></warehousename>
+		<warehouseaddress1><%= value %></warehouseaddress1>
+		<warehouseaddress2><%= value %></warehouseaddress2>
+		<warehousecity><%= value %></warehousecity>
+		<warehousestate><%= value %></warehousestate>
+		<warehousezip><%= value %></warehousezip>
+		<warehousecountry><%= value %></warehousecountry>
+		<warehousecode><%= value %></warehousecode>
+		<items>
+		<% <!-- start loop --> %>
+		<% var count = 0; %>
+		<% _.each(items, function(item) { %>
+			<item>
+				<upccode><%= value %></upccode>
+				<vendoritemnum><%= item.vendoritemnum %></vendoritemnum>
+				<olditemnum><%= value %></olditemnum>
+				<description><%= item.description %></description>
+				<qtyshipped><%= item.qty %></qtyshipped>
+				<uom><%= value %></uom>
+				<sellerlinenum><%= value %></sellerlinenum>
+				<polinenum><%= value %></polinenum>
+			</item>
+			<% count++; %>
+		<% }); %>
+		<% <!-- end loop --> %>
+		</items>
+	</stocktransfershipment>
+</stocktransfershipments>
+
+
+
+
+
