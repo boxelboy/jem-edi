@@ -1,7 +1,7 @@
-define(['require', 'app/models/Base', 'app/models/sales_order_line_items', 'app/models/purchase_order', 'app/models/clients'], function (require, Base) {
+define(['require', 'app/models/Base', 'app/models/sales_order_line_items', 'app/models/purchase_order', 'app/models/clients', 'app/models/invoice'], function (require, Base) {
     'use strict';
     return Base.extend({
-        urlRoot: 'http://localhost:32767/api/BusinessMan/sales_orders',
+        urlRoot: 'http://localhost:32767/api/BusinessMan/sales_order',
 
         relations: function () {
             return [
@@ -16,6 +16,10 @@ define(['require', 'app/models/Base', 'app/models/sales_order_line_items', 'app/
                 {
                     key: 'sales_order:clients',
                     relatedModel: require('app/models/clients')
+                },
+                {
+                    key: 'sales_order:invoice',
+                    relatedModel: require('app/models/invoice')
                 }
             ];
         }
