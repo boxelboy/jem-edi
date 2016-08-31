@@ -1,92 +1,92 @@
-<asnpickandpack>
-	<shipment>
-		<rowtype><%= value %></rowtype>
-		<transactiontype><%= value %></transactiontype>
-		<accountingid><%= value %></accountingid>
-		<shipmentid><%= value %></shipmentid>
-		<scac><%= value %></scac>
-		<carrierpro><%= value %></carrierpro>
-		<billoflading><%= value %></billoflading>
-		<scheduleddelivery><%= value %></scheduleddelivery>
-		<shipdate><%= shipdate %></shipdate>
-		<shiptoname><%= shiptoname %></shiptoname>
-		<shiptoaddress-lineone><%= shiptoaddress1 %></shiptoaddress-lineone>
-		<shiptoaddress-linetwo><%= shiptoaddress2%></shiptoaddress-linetwo>
-		<shiptocity><%= shiptocity %></shiptocity>
-		<shiptostate><%= shiptostate %></shiptostate>
-		<shiptozip><%= shiptozip %></shiptozip>
-		<shiptocountry><%= shiptocountry %></shiptocountry>
-		<shiptoaddresscode><%= value %></shiptoaddresscode>
-		<shipvia><%= value %></shipvia>
-		<shiptotype><%= value %></shiptotype>
-		<packagingtype><%= value %></packagingtype>
-		<grossweight><%= value %></grossweight>
-		<grossweightuom><%= value %></grossweightuom>
-		<ofcartonsshipped><%= value %></ofcartonsshipped>
-		<carriertrailer><%= value %></carriertrailer>
-		<trailerinitital><%= value %></trailerinitital>
-		<shipfromname><%= value %></shipfromname>
-		<shipfromaddress-lineone><%= value %></shipfromaddress-lineone>
-		<shipfromaddress-linetwo><%= value %></shipfromaddress-linetwo>
-		<shipfromcity><%= value %></shipfromcity>
-		<shipfromstate><%= value %></shipfromstate>
-		<shipfromzip><%= value %></shipfromzip>
-		<shipfromcountry><%= value %></shipfromcountry>
-		<shipfromaddresscode><%= value %></shipfromaddresscode>
-		<vendor><%= value %></vendor>
-		<dccode><%= value %></dccode>
-		<transportationmethod><%= transportmethod %></transportationmethod>
-		<productgroup><%= value %></productgroup>
-		<status><%= value %></status>
-		<timeshipped><%= value %></timeshipped>
+<ASNPickAndPack>
+	<Shipment>
+		<RowType></RowType>
+		<TransactionType></TransactionType>
+		<AccountingID></AccountingID>
+		<ShipmentID></ShipmentID>
+		<SCAC></SCAC>
+		<CarrierPro></CarrierPro>
+		<BillofLading></BillofLading>
+		<ScheduledDelivery></ScheduledDelivery>
+		<ShipDate><%= shipdate %></ShipDate>
+		<ShipToName><%= shiptoname %></ShipToName>
+		<ShipToAddress-LineOne><%= shiptoaddress1 %></ShipToAddress-LineOne>
+		<ShipToAddress-LineTwo><%= shiptoaddress2%></ShipToAddress-LineTwo>
+		<ShipToCity><%= shiptocity %></ShipToCity>
+		<ShipToState><%= shiptostate %></ShipToState>
+		<ShipToZip><%= shiptozip %></ShipToZip>
+		<ShipToCountry><%= shiptocountry %></ShipToCountry>
+		<ShiptoAddressCode></ShiptoAddressCode>
+		<ShipVia></ShipVia>
+		<ShipToType></ShipToType>
+		<PackagingType></PackagingType>
+		<GrossWeight></GrossWeight>
+		<GrossWeightUOM></GrossWeightUOM>
+		<ofCartonsShipped></ofCartonsShipped>
+		<CarrierTrailer></CarrierTrailer>
+		<TrailerInitital></TrailerInitital>
+		<ShipFromName></ShipFromName>
+		<ShipFromAddress-LineOne></ShipFromAddress-LineOne>
+		<ShipFromAddress-LineTwo></ShipFromAddress-LineTwo>
+		<ShipFromCity></ShipFromCity>
+		<ShipFromState></ShipFromState>
+		<ShipFromZip></ShipFromZip>
+		<ShipFromCountry></ShipFromCountry>
+		<ShipFromAddressCode></ShipFromAddressCode>
+		<Vendor></Vendor>
+		<DCCode></DCCode>
+		<TransportationMethod><%= transportmethod %></TransportationMethod>
+		<ProductGroup></ProductGroup>
+		<Status></Status>
+		<TimeShipped></TimeShipped>
 	<% <!-- start order loop --> %>
-		<order>
-			<rowtype><%= value %></rowtype>
-			<po><%= ponum %></po>
-			<podate><%= podate %></podate>
-			<invoice><%= value %></invoice>
-			<orderweight><%= value %></orderweight>
-			<storename><%= value %></storename>
-			<storenumber><%= value %></storenumber>
-			<markforcode><%= value %></markforcode>
-			<department><%= value %></department>
-			<orderladingquantity><%= value %></orderladingquantity>
-			<packagingtype><%= value %></packagingtype>
+		<Order>
+			<RowType></RowType>
+			<PO><%= ponum %></PO>
+			<PODate><%= podate %></PODate>
+			<Invoice></Invoice>
+			<OrderWeight></OrderWeight>
+			<StoreName></StoreName>
+			<StoreNumber></StoreNumber>
+			<MarkForCode></MarkForCode>
+			<Department></Department>
+			<OrderLadingQuantity></OrderLadingQuantity>
+			<PackagingType></PackagingType>
 	<% <!-- start pack loop --> %>
-			<pack>
-				<rowtype><%= value %></rowtype>
-				<ucc-128><%= value %></ucc-128>
-				<packsize><%= value %></packsize>
-				<innerpackperouterpack><%= value %></innerpackperouterpack>
-				<packheight><%= value %></packheight>
-				<packlength><%= value %></packlength>
-				<packwidth><%= value %></packwidth>
-				<packweight><%= value %></packweight>
-				<qtyofupcswithinpack><%= value %></qtyofupcswithinpack>
-				<uomofupcs><%= value %></uomofupcs>
-				<storename><%= value %></storename>
-				<storenumber><%= value %></storenumber>
+			<Pack>
+				<RowType></RowType>
+				<UCC-128></UCC-128>
+				<PackSize></PackSize>
+				<InnerPackPerOuterPack></InnerPackPerOuterPack>
+				<PackHeight></PackHeight>
+				<PackLength></PackLength>
+				<PackWidth></PackWidth>
+				<PackWeight></PackWeight>
+				<QtyofUPCswithinPack></QtyofUPCswithinPack>
+				<UOMofUPCs></UOMofUPCs>
+				<StoreName></StoreName>
+				<StoreNumber></StoreNumber>
 	<% <!-- start item loop --> %>
-				<item>
-					<rowtype><%= value %></rowtype>
-					<line><%= value %></line>
-					<vendorpart><%= value %></vendorpart>
-					<buyerpart><%= value %></buyerpart>
-					<upc><%= value %></upc>
-					<itemdescription><%= value %></itemdescription>
-					<quantityshipped><%= value %></quantityshipped>
-					<uom><%= value %></uom>
-					<orderedquantity><%= value %></orderedquantity>
-					<unitprice><%= value %></unitprice>
-					<packsize><%= value %></packsize>
-					<packuom><%= value %></packuom>
-					<innerpacksperouterpack><%= value %></innerpacksperouterpack>
-				</item>
+				<Item>
+					<RowType></RowType>
+					<Line></Line>
+					<VendorPart></VendorPart>
+					<BuyerPart></BuyerPart>
+					<UPC></UPC>
+					<ItemDescription></ItemDescription>
+					<QuantityShipped></QuantityShipped>
+					<UOM></UOM>
+					<OrderedQuantity></OrderedQuantity>
+					<UnitPrice></UnitPrice>
+					<PackSize></PackSize>
+					<PackUOM></PackUOM>
+					<InnerPacksperOuterPack></InnerPacksperOuterPack>
+				</Item>
 	<% <!-- end item loop --> %>
-			</pack>
+			</Pack>
 	<% <!-- end pack loop --> %>
-		</order>
+		</Order>
 	<% <!-- end order loop --> %>
 
-	</shipment>
-</asnpickandpack>
+	</Shipment>
+</ASNPickAndPack>

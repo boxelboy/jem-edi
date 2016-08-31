@@ -1,7 +1,7 @@
 define(['require', 'app/models/Base', 'app/models/invoice_line_items'], function (require, Base) {
     'use strict';
     return Base.extend({
-        urlRoot: 'http://localhost:32767/api/BusinessMan/invoice',
+        urlRoot: '/api/BusinessMan/invoice',
 
         relations: function () {
             return [

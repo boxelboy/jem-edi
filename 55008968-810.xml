@@ -1,0 +1,69 @@
+<Invoice>
+	<Header>
+		<RowType>810</RowType>
+		<TransactionType></TransactionType>
+		<AccountingID></AccountingID>
+		<Invoice>55008968</Invoice>
+		<InvoiceDate>2015-05-22</InvoiceDate>
+		<PO></PO>
+		<PODate></PODate>
+		<DepartmentNumber></DepartmentNumber>
+		<BillofLading></BillofLading>
+		<CarrierPro></CarrierPro>
+		<SCAC></SCAC>
+		<ShipVia></ShipVia>
+		<ShipToName>Austin Touchton</ShipToName>
+		<ShipToAddress-LineOne>?</ShipToAddress-LineOne>
+		<ShipToAddress-LineTwo></ShipToAddress-LineTwo>
+		<ShipToCity></ShipToCity>
+		<ShipToState>Los Angeles</ShipToState>
+		<ShipToZipcode>90266</ShipToZipcode>
+		<ShiptoCountry>United States</ShiptoCountry>
+		<Store></Store>
+		<BilltoName>Austin Touchton</BilltoName>
+		<BilltoAddress-LineOne>1141 Highland Ave</BilltoAddress-LineOne>
+		<BilltoAddress-LineTwo></BilltoAddress-LineTwo>
+		<BilltoCity></BilltoCity>
+		<BilltoState>Los Angeles</BilltoState>
+		<BilltoZipcode>90266</BilltoZipcode>
+		<BilltoCountry>United States</BilltoCountry>
+		<BilltoCode></BilltoCode>
+		<ShipDate></ShipDate>
+		<TermsDescription></TermsDescription>
+		<NetDaysDue>30</NetDaysDue>
+		<DiscountDaysDue></DiscountDaysDue>
+		<DiscountPercent></DiscountPercent>
+		<Note></Note>
+		<Weight></Weight>
+		<TotalCasesShipped></TotalCasesShipped>
+		<TaxAmount>40</TaxAmount>
+		<ChargeAmount1></ChargeAmount1>
+		<ChargeAmount2></ChargeAmount2>
+		<AllowancePercent1></AllowancePercent1>
+		<AllowanceAmount1></AllowanceAmount1>
+		<AllowancePercent2></AllowancePercent2>
+		<AllowanceAmount2></AllowanceAmount2>
+	
+	
+	
+		<Item>
+			<RowType></RowType>
+			<Line>0</Line>
+			<VendorPart></VendorPart>
+			<BuyerPart></BuyerPart>
+			<UPC></UPC>
+			<Description>1-13-1230909</Description>
+			<QuantityShipped></QuantityShipped>
+			<UOM>Each</UOM>
+			<UnitPrice>100</UnitPrice>
+			<QuantityOrdered>1</QuantityOrdered>
+			<PackSize></PackSize>
+			<ofInnerPacks></ofInnerPacks>
+			<ItemAllowancePercent></ItemAllowancePercent>
+			<ItemAllowanceAmount></ItemAllowanceAmount>
+		</Item>
+		
+	
+	
+	</Header>
+</Invoice>

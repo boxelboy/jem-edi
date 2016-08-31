@@ -14,7 +14,7 @@ define(function (require) {
 
         routes: {
             'edi/:num/:id' : 'default',
-            'get/:type/:po' : 'get'
+            'get/:type' : 'get'
         },
 
         default: function (num, id) {
@@ -23,9 +23,9 @@ define(function (require) {
             });
         },
 
-        get: function (type, po) {
+        get: function (type) {
             require(['../app/views/get'], function (Content) {
-                self.app.setXML(new Content({ app: self.app, type: type, po: po }));
+                self.app.setXML(new Content({ app: self.app, type: type }));
             });
         }
 

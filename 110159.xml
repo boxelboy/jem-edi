@@ -1,78 +1,74 @@
-<WarehouseOrders>
-	<WarehouseOrder>
-		<ReportType>940</ReportType>
-		<TransactionType>Sale</TransactionType>
-		<PONum>110159</PONum>
-		<PODate>2016-01-14</PODate>
-		<DepositorOrderNum>value</DepositorOrderNum>
-		<PaymentMethod>value</PaymentMethod>
-		<ShipDate>2016-03-11</ShipDate>
-		<CancelDate>2016-04-01</CancelDate>
-		<SCAC>value</SCAC>
-		<Routing>value</Routing>
-		<TransportationMethod>Sea</TransportationMethod>
-		<QuantityOrdered>value</QuantityOrdered>
-		<ShipToName>Burlington Coat Factory</ShipToName>
-		<ShipToAddress1>1830 Route 130 N</ShipToAddress1>
-		<ShipToAddress2>value</ShipToAddress2>
-		<ShipToCity>Burlington</ShipToCity>
-		<ShipToState></ShipToState>
-		<ShipToZip>08016</ShipToZip>
-		<ShipToCountry></ShipToCountry>
-		<ShipFromName>value</ShipFromName>
-		<ShipFromAddress1>value</ShipFromAddress1>
-		<ShipFromAddress2>value</ShipFromAddress2>
-		<ShipFromCity>value</ShipFromCity>
-		<ShipFromState>value</ShipFromState>
-		<ShipFromZip>value</ShipFromZip>
-		<ShipFromCode>12345</ShipFromCode>
-		<PlantName>value</PlantName>
-		<PlantAddress1>value</PlantAddress1>
-		<PlantAddress2>value</PlantAddress2>
-		<PlantCity>value</PlantCity>
-		<PlantState>value</PlantState>
-		<PlantZip>value</PlantZip>
-		<PlantCode>value</PlantCode>
-		<StoreNum>value</StoreNum>
-		<CustomerOrderNum>value</CustomerOrderNum>
-		<VendorNum>value</VendorNum>
-		<MerchandiseType>value</MerchandiseType>
-		<DepartmentNum>value</DepartmentNum>
-		<ShipID>value</ShipID>
-		<ReferenceStoreNum>value</ReferenceStoreNum>
-		<AccountNum>value</AccountNum>
-		<ClientNum>BU100</ClientNum>
-		<DCNum>value</DCNum>
-		<ReceiverName>value</ReceiverName>
-		<ReceiverPhoneNum>value</ReceiverPhoneNum>
-		<Items>
-	<!-- start loop -->
+<warehouseorders>
+	<warehouseorder>
+		<reporttype>940</reporttype>
+		<transactiontype>Sale</transactiontype>
+		<ponum>110159</ponum>
+		<podate>2016-01-14</podate>
+		<depositorordernum>value</depositorordernum>
+		<paymentmethod>value</paymentmethod>
+		<shipdate>2016-03-11</shipdate>
+		<canceldate>2016-04-01</canceldate>
+		<scac>value</scac>
+		<routing>value</routing>
+		<transportationmethod>Sea</transportationmethod>
+		<quantityordered>value</quantityordered>
+		<shiptoname>Burlington Coat Factory</shiptoname>
+		<shiptoaddress1>1830 Route 130 N</shiptoaddress1>
+		<shiptoaddress2>value</shiptoaddress2>
+		<shiptocity>Burlington</shiptocity>
+		<shiptostate></shiptostate>
+		<shiptozip>08016</shiptozip>
+		<shiptocountry></shiptocountry>
+		<shipfromname>value</shipfromname>
+		<shipfromaddress1>value</shipfromaddress1>
+		<shipfromaddress2>value</shipfromaddress2>
+		<shipfromcity>value</shipfromcity>
+		<shipfromstate>value</shipfromstate>
+		<shipfromzip>value</shipfromzip>
+		<shipfromcode>12345</shipfromcode>
+		<plantname>value</plantname>
+		<plantaddress1>value</plantaddress1>
+		<plantaddress2>value</plantaddress2>
+		<plantcity>value</plantcity>
+		<plantstate>value</plantstate>
+		<plantzip>value</plantzip>
+		<plantcode>value</plantcode>
+		<storenum>value</storenum>
+		<customerordernum>value</customerordernum>
+		<vendornum>value</vendornum>
+		<merchandisetype>value</merchandisetype>
+		<departmentnum>value</departmentnum>
+		<shipid>value</shipid>
+		<referencestorenum>value</referencestorenum>
+		<accountnum>value</accountnum>
+		<clientnum>BU100</clientnum>
+		<dcnum>value</dcnum>
+		<Rrceivername>value</receivername>
+		<receiverphonenum>value</receiverphonenum>
+		<items>
 	
-	
-			<Item>
-				<LineNum>0</LineNum>
-				<UPCCaseCode>value</UPCCaseCode>
-				<VendorItemNum>2J701149301D</VendorItemNum>
-				<BuyersItemNum>2J701149301D</BuyersItemNum>
-				<SelfPlanningNum>value</SelfPlanningNum>
-				<Description>Fake Suede Toddler Boot</Description>
-				<Qty>1020</Qty>
-				<UOM>value</UOM>
-				<RetailPrice>2</RetailPrice>
-				<SizeofInnerPacks>value</SizeofInnerPacks>
-				<Color>Grey Teal</Color>
-				<Gender>Girls</Gender>
-				<ProductType>Boot Slipper</ProductType>
-				<Brand>Hot Kiss</Brand>
-				<Prepack>6</Prepack>
-				<SizeBreak>S-M-L</SizeBreak>
-				<SizeScale>1-3-2</SizeScale>
-				<MC>48</MC>
-				<CC>value</CC>
-			</Item>
+			<item>
+				<linenum>0</linenum>
+				<upccasecode>value</upccasecode>
+				<vendoritemnum>2J701149301D</vendoritemnum>
+				<buyersitemnum>2J701149301D</buyersitemnum>
+				<selfplanningnum>value</selfplanningnum>
+				<description>Fake Suede Toddler Boot</description>
+				<qty>1020</qty>
+				<uom>value</uom>
+				<retailprice>2</retailprice>
+				<sizeofinnerpacks>value</sizeofinnerpacks>
+				<color>Grey Teal</color>
+				<gender>Girls</gender>
+				<producttype>Boot Slipper</producttype>
+				<brand>Hot Kiss</brand>
+				<prepack>6</prepack>
+				<sizebreak>S-M-L</sizebreak>
+				<sizescale>1-3-2</sizescale>
+				<mm>48</mc>
+				<cc>value</cc>
+			</item>
 		
-	
-	<!-- end loop -->
-		</Items>
-	</WarehouseOrder>
-</WarehouseOrders>
+		</items>
+	</warehouseorder>
+</warehouseorders>

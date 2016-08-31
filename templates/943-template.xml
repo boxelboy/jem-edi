@@ -1,61 +1,61 @@
-<stocktransfershipments>
-	<stocktransfershipment>
-		<reporttype>943</reporttype>
-		<type><%= value %></type>
-		<depositorordernum><%= value %></depositorordernum>
-		<shipmentid><%= value %></shipmentid>
-		<ponum><%= ponum %></ponum>
-		<transactiondate><%= value %></transactiondate>
-		<requesteddelivery><%= value %></requesteddelivery>
-		<transportationmethod><%= transportmethod %></transportationmethod>
-		<scac><%= value %></scac>
-		<routing><%= value %></routing>
-		<numofunitsshipped><%= value %></numofunitsshipped>
-		<weight><%= value %></weight>
-		<shiptoname><%= shiptoname %></shiptoname>
-		<shiptoaddress1><%= shiptoaddress1 %></shiptoaddress1>
-		<shiptoaddress2><%= value %></shiptoaddress2>
-		<shiptocity><%= shiptocity %></shiptocity>
-		<shiptostate><%= shiptostate %></shiptostate>
-		<shiptozip><%= shiptozip %></shiptozip>
-		<shiptocountry><%= shiptocountry %></shiptocountry>
-		<shiptocode><%= value %></shiptocode>
-		<shipfromname><%= value %></shipfromname>
-		<shipfromaddress1><%= value %></shipfromaddress1>
-		<shipfromaddress2><%= value %></shipfromaddress2>
-		<shipfromcity><%= value %></shipfromcity>
-		<shipfromstate><%= value %></shipfromstate>
-		<shipfromzip><%= value %></shipfromzip>
-		<shipfromcountry><%= value %></shipfromcountry>
-		<shipfromcode><%= shipfromcode %></shipfromcode>
-		<warehousename><%= warehousename %></warehousename>
-		<warehouseaddress1><%= value %></warehouseaddress1>
-		<warehouseaddress2><%= value %></warehouseaddress2>
-		<warehousecity><%= value %></warehousecity>
-		<warehousestate><%= value %></warehousestate>
-		<warehousezip><%= value %></warehousezip>
-		<warehousecountry><%= value %></warehousecountry>
-		<warehousecode><%= value %></warehousecode>
-		<items>
+<StockTransferShipments>
+	<StockTransferShipment>
+		<ReportType>943</ReportType>
+		<Type></Type>
+		<DepositorOrderNum></DepositorOrderNum>
+		<ShipmentID></ShipmentID>
+		<PONum><%= ponum %></PONum>
+		<TransactionDate></TransactionDate>
+		<RequestedDelivery></RequestedDelivery>
+		<TransportationMethod><%= transportmethod %></TransportationMethod>
+		<SCAC></SCAC>
+		<Routing></Routing>
+		<NumofUnitsShipped></NumofUnitsShipped>
+		<Weight></Weight>
+		<ShipToName><%= shiptoname %></ShipToName>
+		<ShipToAddress1><%= shiptoaddress1 %></ShipToAddress1>
+		<ShipToAddress2></ShipToAddress2>
+		<ShipToCity><%= shiptocity %></ShipToCity>
+		<ShipToState><%= shiptostate %></ShipToState>
+		<ShipToZip><%= shiptozip %></ShipToZip>
+		<ShipToCountry><%= shiptocountry %></ShipToCountry>
+		<ShipToCode></ShipToCode>
+		<ShipFromName></ShipFromName>
+		<ShipFromAddress1></ShipFromAddress1>
+		<ShipFromAddress2></ShipFromAddress2>
+		<ShipFromCity></ShipFromCity>
+		<ShipFromState></ShipFromState>
+		<ShipFromZip></ShipFromZip>
+		<ShipFromCountry></ShipFromCountry>
+		<ShipFromCode><%= shipfromcode %></ShipFromCode>
+		<WarehouseName><%= warehousename %></WarehouseName>
+		<WarehouseAddress1></WarehouseAddress1>
+		<WarehouseAddress2></WarehouseAddress2>
+		<WarehouseCity></WarehouseCity>
+		<WarehouseState></WarehouseState>
+		<WarehouseZip></WarehouseZip>
+		<WarehouseCountry></WarehouseCountry>
+		<WarehouseCode></WarehouseCode>
+		<Items>
 		<% <!-- start loop --> %>
 		<% var count = 0; %>
 		<% _.each(items, function(item) { %>
-			<item>
-				<upccode><%= value %></upccode>
-				<vendoritemnum><%= item.vendoritemnum %></vendoritemnum>
-				<olditemnum><%= value %></olditemnum>
-				<description><%= item.description %></description>
-				<qtyshipped><%= item.qty %></qtyshipped>
-				<uom><%= value %></uom>
-				<sellerlinenum><%= value %></sellerlinenum>
-				<polinenum><%= value %></polinenum>
-			</item>
+			<Item>
+				<UPCCode></UPCCode>
+				<VendorItemNum><%= item.vendoritemnum %></VendorItemNum>
+				<OldItemNum></OldItemNum>
+				<Description><%= item.description %></Description>
+				<QtyShipped><%= item.qty %></QtyShipped>
+				<UOM></UOM>
+				<SellerLineNum></SellerLineNum>
+				<POLineNum></POLineNum>
+			</Item>
 			<% count++; %>
 		<% }); %>
 		<% <!-- end loop --> %>
-		</items>
-	</stocktransfershipment>
-</stocktransfershipments>
+		</Items>
+	</StockTransferShipment>
+</StockTransferShipments>
 
 
 

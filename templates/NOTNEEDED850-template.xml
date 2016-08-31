@@ -1,0 +1,58 @@
+<purchaseorder>
+<headerrow>
+<rowtype>850</rowtype>
+<transactiontype>purchase</transactiontype>
+<accountingid></accountingid>
+<purcahseordernumber><%= ponum %></purcahseordernumber>
+<podate><%= podate %></podate>
+<shiptoname><%= shiptoname %></shiptoname>
+<shiptoaddress-lineone><%= shiptoaddress1 %></shiptoaddress-lineone>
+<shiptoaddress-linetwo></shiptoaddress-linetwo>
+<shiptocity><%= shiptocity %></shiptocity>
+<shiptostate><%= shiptostate %></shiptostate>
+<shiptozipcode><%= shiptozip %></shiptozipcode>
+<shiptocountry><%= shiptocountry %></shiptocountry>
+<store></store>
+<billtoname></billtoname>
+<billtoaddress-lineone></billtoaddress-lineone>
+<billtoaddress-linetwo></billtoaddress-linetwo>
+<billtocity></billtocity>
+<billtostate></billtostate>
+<billtozipcode></billtozipcode>
+<billtocountry></billtocountry>
+<billtocode></billtocode>
+<shipvia><%= transportmethod %></shipvia>
+<shipdate><%= shipdate %></shipdate>
+<terms><%= terms %></terms>
+<note></note>
+<departmentnumber></departmentnumber>
+<canceldate></canceldate>
+<donotshipbefore></donotshipbefore>
+<donotshipafter></donotshipafter>
+<allowancepercent1></allowancepercent1>
+<allowanceamount1></allowanceamount1>
+<allowanceprecent2></allowanceprecent2>
+<allowanceamount2></allowanceamount2>
+	<% <!-- start loop --> %>
+	<% var count = 0; %>
+	<% _.each(items, function(item) { %>
+		<itemrow>
+			<rowtype></rowtype>
+			<line><%= count %></line>
+			<vendorpart><%= item.vendoritemnum %></vendorpart>
+			<buyerpart><%= item.stockID %></buyerpart>
+			<upc></upc>
+			<description><%= item.description %></description>
+			<quantity><%= item.qty %></quantity>
+			<uom>Each</uom>
+			<unitprice><%= item.cost %></unitprice>
+			<packsize><%= item.prepack %></packsize>
+			<ofinnerpacks></ofinnerpacks>
+			<itemallowancepercent1></itemallowancepercent1>
+			<itemallowanceamount1></itemallowanceamount1>
+		</itemrow>
+		<% count++; %>
+	<% }); %>
+	<% <!-- end loop --> %>
+</headerrow>
+</purchaseorder>

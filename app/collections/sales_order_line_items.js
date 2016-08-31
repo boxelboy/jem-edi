@@ -2,7 +2,7 @@ define(['app/collections/Base', 'app/models/sales_order_line_items'], function (
     'use strict';
 
     return Base.extend({
-        url: 'http://localhost:32767/api/BusinessMan/sales_order_line_items',
+        url: '/api/BusinessMan/sales_order_line_items',
         rel: 'api:sales_order_line_items',
         model: sales_order_line_items
     });

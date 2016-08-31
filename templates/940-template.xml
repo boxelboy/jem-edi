@@ -1,78 +1,78 @@
-<warehouseorders>
-	<warehouseorder>
-		<reporttype>940</reporttype>
-		<transactiontype>sale</transactiontype>
-		<ponum><%= ponum %></ponum>
-		<podate><%= podate %></podate>
-		<depositorordernum><</depositorordernum>
-		<paymentmethod></paymentmethod>
-		<shipdate><%= shipdate %></shipdate>
-		<canceldate><%= canceldate %></canceldate>
-		<scac></scac>
-		<routing></routing>
-		<transportationmethod><%= transportmethod %></transportationmethod>
-		<quantityordered><%= quantityordered %></quantityordered>
-		<shiptoname><%= shiptoname %></shiptoname>
-		<shiptoaddress1><%= shiptoaddress1 %></shiptoaddress1>
-		<shiptoaddress2><%= shiptoaddress2 %></shiptoaddress2>
-		<shiptocity><%= shiptocity %></shiptocity>
-		<shiptostate><%= shiptostate %></shiptostate>
-		<shiptozip><%= shiptozip %></shiptozip>
+<WarehouseOrders>
+	<WarehouseOrder>
+		<ReportType>940</ReportType>
+		<TransactionType>sale</TransactionType>
+		<PONum><%= ponum %></PONum>
+		<PODate><%= podate %></PODate>
+		<DepositorOrderNum></DepositorOrderNum>
+		<PaymentMethod><%= paymentmethod %></PaymentMethod>
+		<ShipDate><%= shipdate %></ShipDate>
+		<CancelDate><%= canceldate %></CancelDate>
+		<SCAC></SCAC>
+		<Routing></Routing>
+		<TransportationMethod><%= transportmethod %></TransportationMethod>
+		<QuantityOrdered><%= quantityordered %></QuantityOrdered>
+		<ShipToName><%= shiptoname %></ShipToName>
+		<ShipToAddress1><%= shiptoaddress1 %></ShipToAddress1>
+		<ShipToAddress2><%= shiptoaddress2 %></ShipToAddress2>
+		<ShipToCity><%= shiptocity %></ShipToCity>
+		<ShipToState><%= shiptostate %></ShipToState>
+		<ShipToZip><%= shiptozip %></ShipToZip>
 		<shiptocountry><%= shiptocountry %></shiptocountry>
-		<shipfromname></shipfromname>
-		<shipfromaddress1></shipfromaddress1>
-		<shipfromaddress2></shipfromaddress2>
-		<shipfromcity></shipfromcity>
-		<shipfromstate></shipfromstate>
-		<shipfromzip><</shipfromzip>
-		<shipfromcode><%= shipfromcode %></shipfromcode>
-		<plantname></plantname>
-		<plantaddress1></plantaddress1>
-		<plantaddress2></plantaddress2>
-		<plantcity><</plantcity>
-		<plantstate></plantstate>
-		<plantzip></plantzip>
-		<plantcode><</plantcode>
-		<storenum><</storenum>
-		<customerordernum><%= customerordernum %></customerordernum>
-		<vendornum></vendornum>
-		<merchandisetype></merchandisetype>
-		<departmentnum></departmentnum>
-		<shipid></shipid>
-		<referencestorenum></referencestorenum>
-		<accountnum></accountnum>
-		<clientnum><%= clientnum %></clientnum>
-		<dcnum></dcnum>
-		<receivername><</receivername>
-		<receiverphonenum></receiverphonenum>
-		<items>
+		<ShipFromName></ShipFromName>
+		<ShipFromAddress1></ShipFromAddress1>
+		<ShipFromAddress2></ShipFromAddress2>
+		<ShipFromCity></ShipFromCity>
+		<ShipFromState></ShipFromState>
+		<ShipFromZip></ShipFromZip>
+		<ShipFromCode><%= shipfromcode %></ShipFromCode>
+		<PlantName></PlantName>
+		<PlantAddress1></PlantAddress1>
+		<PlantAddress2></PlantAddress2>
+		<PlantCity></PlantCity>
+		<PlantState></PlantState>
+		<PlantZip></PlantZip>
+		<PlantCode></PlantCode>
+		<StoreNum></StoreNum>
+		<CustomerOrderNum><%= customerordernum %></CustomerOrderNum>
+		<VendorNum></VendorNum>
+		<MerchandiseType></MerchandiseType>
+		<DepartmentNum></DepartmentNum>
+		<ShipID></ShipID>
+		<ReferenceStoreNum></ReferenceStoreNum>
+		<AccountNum></AccountNum>
+		<ClientNum><%= clientnum %></ClientNum>
+		<DCNum></DCNum>
+		<ReceiverName></ReceiverName>
+		<ReceiverPhoneNum></ReceiverPhoneNum>
+		<Items>
 	<% <!-- start loop --> %>
 	<% var count = 0; %>
 	<% _.each(items, function(item) { %>
-			<item>
-				<linenum><%= count %></linenum>
-				<upccasecode><%= value %></upccasecode>
-				<vendoritemnum><%= item.vendoritemnum %></vendoritemnum>
-				<buyersitemnum><%= item.vendoritemnum %></buyersitemnum>
-				<selfplanningnum></selfplanningnum>
-				<description><%= item.description %></description>
-				<qty><%= item.qty %></qty>
-				<uom><%= value %></uom>
-				<retailprice><%= item.retailprice %></retailprice>
-				<sizeofinnerpacks><%= value %></sizeofinnerpacks>
-				<color><%= item.color %></color>
-				<gender><%= item._embedded['sales_order_line_items:stock'].gender %></gender>
-				<producttype><%= item._embedded['sales_order_line_items:stock'].producttype %></producttype>
-				<brand><%= item._embedded['sales_order_line_items:stock'].brand %></brand>
-				<prepack><%= item.prepack %></prepack>
-				<sizebreak><%= item.sizebreak %></sizebreak>
-				<sizescale><%= item.sizescale %></sizescale>
-				<mc><%= item.mc %></mc>
-				<cc></cc>
-			</item>
+			<Item>
+				<LineNum><%= count %></LineNum>
+				<UPCCaseCode><%= value %></UPCCaseCode>
+				<VendorItemNum><%= item.vendoritemnum %></VendorItemNum>
+				<BuyersItemNum><%= item.vendoritemnum %></BuyersItemNum>
+				<SelfPlanningNum></SelfPlanningNum>
+				<Description><%= item.description %></Description>
+				<Qty><%= item.qty %></Qty>
+				<UOM>Each</UOM>
+				<RetailPrice><%= item.retailprice %></RetailPrice>
+				<SizeofInnerPacks></SizeofInnerPacks>
+				<Color><%= item.color %></Color>
+				<Gender><%= item._embedded['sales_order_line_items:stock'].gender %></Gender>
+				<ProductType><%= item._embedded['sales_order_line_items:stock'].producttype %></ProductType>
+				<Brand><%= item._embedded['sales_order_line_items:stock'].brand %></Brand>
+				<Prepack><%= item.prepack %></Prepack>
+				<SizeBreak><%= item.sizebreak %></SizeBreak>
+				<SizeScale><%= item.sizescale %></SizeScale>
+				<MC><%= item.mc %></MC>
+				<CC></CC>
+			</Item>
 		<% count++; %>
 	<% }); %>
 	<% <!-- end loop --> %>
-		</items>
-	</warehouseorder>
-</warehouseorders>
+		</Items>
+	</WarehouseOrder>
+</WarehouseOrders>

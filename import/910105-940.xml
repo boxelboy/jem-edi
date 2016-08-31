@@ -1,0 +1,78 @@
+<WarehouseOrders>
+	<WarehouseOrder>
+		<ReportType>940</ReportType>
+		<TransactionType>sale</TransactionType>
+		<PONum>910105</PONum>
+		<PODate></PODate>
+		<DepositorOrderNum></DepositorOrderNum>
+		<PaymentMethod></PaymentMethod>
+		<ShipDate>09/20/2015</ShipDate>
+		<CancelDate>09/25/2015</CancelDate>
+		<SCAC></SCAC>
+		<Routing></Routing>
+		<TransportationMethod>Courier</TransportationMethod>
+		<QuantityOrdered></QuantityOrdered>
+		<ShipToName>Ross Stores Inc.</ShipToName>
+		<ShipToAddress1>PO Box 29161</ShipToAddress1>
+		<ShipToAddress2></ShipToAddress2>
+		<ShipToCity>Hot Springs</ShipToCity>
+		<ShipToState></ShipToState>
+		<ShipToZip>71903</ShipToZip>
+		<shiptocountry></shiptocountry>
+		<ShipFromName></ShipFromName>
+		<ShipFromAddress1></ShipFromAddress1>
+		<ShipFromAddress2></ShipFromAddress2>
+		<ShipFromCity></ShipFromCity>
+		<ShipFromState></ShipFromState>
+		<ShipFromZip></ShipFromZip>
+		<ShipFromCode></ShipFromCode>
+		<PlantName></PlantName>
+		<PlantAddress1></PlantAddress1>
+		<PlantAddress2></PlantAddress2>
+		<PlantCity></PlantCity>
+		<PlantState></PlantState>
+		<PlantZip></PlantZip>
+		<PlantCode></PlantCode>
+		<StoreNum></StoreNum>
+		<CustomerOrderNum></CustomerOrderNum>
+		<VendorNum></VendorNum>
+		<MerchandiseType></MerchandiseType>
+		<DepartmentNum></DepartmentNum>
+		<ShipID></ShipID>
+		<ReferenceStoreNum></ReferenceStoreNum>
+		<AccountNum></AccountNum>
+		<ClientNum>RO100</ClientNum>
+		<DCNum></DCNum>
+		<ReceiverName></ReceiverName>
+		<ReceiverPhoneNum></ReceiverPhoneNum>
+		<Items>
+	
+	
+	
+			<Item>
+				<LineNum>0</LineNum>
+				<UPCCaseCode>value</UPCCaseCode>
+				<VendorItemNum>2C941148101J</VendorItemNum>
+				<BuyersItemNum>2C941148101J</BuyersItemNum>
+				<SelfPlanningNum></SelfPlanningNum>
+				<Description>Critter Plush Poncho w/Sherpa: Bunny</Description>
+				<Qty>5000</Qty>
+				<UOM>Each</UOM>
+				<RetailPrice>5</RetailPrice>
+				<SizeofInnerPacks></SizeofInnerPacks>
+				<Color></Color>
+				<Gender>Ladies</Gender>
+				<ProductType></ProductType>
+				<Brand>Hot Kiss</Brand>
+				<Prepack>6</Prepack>
+				<SizeBreak>S-M-L</SizeBreak>
+				<SizeScale>1-3-2</SizeScale>
+				<MC>48</MC>
+				<CC></CC>
+			</Item>
+		
+	
+	
+		</Items>
+	</WarehouseOrder>
+</WarehouseOrders>

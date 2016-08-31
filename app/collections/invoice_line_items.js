@@ -2,7 +2,7 @@ define(['app/collections/Base', 'app/models/invoice_line_items'], function (Base
     'use strict';
 
     return Base.extend({
-        url: 'http://localhost:32767/api/BusinessMan/invoice_line_items',
+        url: '/api/BusinessMan/invoice_line_items',
         rel: 'api:invoice_line_items',
         model: invoice_line_items
     });
